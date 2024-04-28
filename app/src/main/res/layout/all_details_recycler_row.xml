@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_corner_text_view"
+    android:layout_marginTop="8dp"
+    android:id="@+id/relative_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:id="@+id/account_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="22sp"
+               tools:text="Google"/>
+           <TextView
+               android:id="@+id/account_pass"
+               android:layout_margin="8dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="22sp"
+               android:gravity="center_vertical"
+               android:textColor="@color/text_grey"
+               tools:text="*******"/>
+       </LinearLayout>
+        <ImageButton
+            android:id="@+id/img_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_icon"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

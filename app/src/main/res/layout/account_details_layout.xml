@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_rounded_corner">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/line_icon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:textColor="#0E7FD9"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Account Details"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Type"
+            android:textColor="@color/text_grey"/>
+        <TextView
+            android:id="@+id/account_type_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username/ Email"
+            android:textColor="@color/text_grey"/>
+        <TextView
+            android:id="@+id/username_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="demoaccount@gmail.com"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/text_grey"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/password_txt_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="******"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <ImageButton
+                android:id="@+id/pass_toggle_img_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                tools:background="@drawable/eye_crossed_icon"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:weightSum="10"
+       android:layout_marginStart="12dp"
+       android:layout_marginEnd="12dp"
+       android:layout_marginTop="18dp"
+       android:layout_marginBottom="18dp"
+       android:orientation="horizontal">
+       <Button
+           android:layout_weight="5"
+           android:id="@+id/edit_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="16sp"
+           android:textColor="@color/white"
+           android:background="@drawable/button_rounded_corner"
+           android:text="Edit"/>
+       <Button
+           android:layout_weight="5"
+           android:id="@+id/delete_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="16sp"
+           android:layout_marginStart="15dp"
+           android:textColor="@color/white"
+           android:background="@drawable/button_rounded_corner"
+           android:backgroundTint="#F91616"
+           android:text="Delete"/>
+
+   </LinearLayout>
+
+
+</LinearLayout>

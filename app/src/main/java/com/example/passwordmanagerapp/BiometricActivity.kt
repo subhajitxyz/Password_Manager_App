@@ -64,6 +64,7 @@ class BiometricActivity : AppCompatActivity() {
                         finish()
 
                     }else{
+                        finish()
                         Toast.makeText(this@BiometricActivity, "Authentication error: $errString", Toast.LENGTH_SHORT).show()
                     }
 
